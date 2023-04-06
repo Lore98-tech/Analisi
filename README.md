@@ -8,3 +8,13 @@ The plot limit on y axis is defined as a constant in function.py and can be chan
 
 List of functions:
 y = np.sin(np.power(x, 2)/k)
+y = np.sin(k *x)
+y = np.power(np.power(k*x, 2) + 1, 1/2) - np.power(np.power(k*x, 2) - 1, 1/2)
+y = x/(1 + k * x)
+y = x/(1 + np.power(k*x, 2))
+y = np.power(k*x, 2)/(1 + np.power(k*x, 2))
+y = np.power((np.power(x, 2) - x),k)
+y = k*k/x
+y = np.sin(np.power(x, 2)/k) + (1 - np.power(1 - np.power(x, 2), 1/2))/k #[-1; 1]
+y = (k * np.power(x, 3) + np.power((k + 1), 2) * np.sin(x))/(1 + np.power(k, 2)) #[-1; 1]
+y = np.power(k, 3)/(np.power(k, 1) * 2 * x) * np.sin(x) + x * np.power((k + 1), 2)/(1 + np.power(k, 2)) - np.log(k * np.abs(x))
