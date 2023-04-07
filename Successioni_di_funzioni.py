@@ -24,7 +24,7 @@ for k in range(0, n + 1):
 
     def funzione(x):
         
-        y = x + k
+        y = np.sin(k*x)
 
         return y
 
