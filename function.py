@@ -3,7 +3,7 @@ import numpy as np
 import math
 import time
 
-step = 0.001
+step = 0.01
 limite = 50
 
 class Function:

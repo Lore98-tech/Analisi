@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import function as fct
 import color as cl
+import math
 
 print("Successione di funzioni")
 print("Inserire il numero di funzioni da visualizzare:")
@@ -22,8 +23,8 @@ if der == 'si':
 for k in range(0, n + 1):
 
     def funzione(x):
-
-        y = np.sin(np.power(x, 2)/k)
+        
+        y = x + k
 
         return y
 
@@ -31,5 +32,6 @@ for k in range(0, n + 1):
     f.plot(a, b, f.get_values_y(a, b), color = cl.color(n, k, cf))
     if der == 'si':
         f.plot(a, b, f.get_der(a, b), color = cl.color(n, k, cd))
-    plt.pause(0.1)
+    print(k)
+    plt.pause(0.05)
 plt.show()

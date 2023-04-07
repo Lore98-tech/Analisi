@@ -18,3 +18,5 @@ y = k*k/x
 y = np.sin(np.power(x, 2)/k) + (1 - np.power(1 - np.power(x, 2), 1/2))/k #[-1; 1]
 y = (k * np.power(x, 3) + np.power((k + 1), 2) * np.sin(x))/(1 + np.power(k, 2)) #[-1; 1]
 y = np.power(k, 3)/(np.power(k, 1) * 2 * x) * np.sin(x) + x * np.power((k + 1), 2)/(1 + np.power(k, 2)) - np.log(k * np.abs(x))
+y = np.sin(x - k/2) 
+y = np.cos(x - k/2) - k*np.log(k + 1)/(k - 20.5) * np.log(x)
