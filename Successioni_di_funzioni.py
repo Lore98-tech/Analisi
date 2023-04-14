@@ -20,10 +20,10 @@ der = input()
 if der == 'si':
     cd = cl.tavola()
 
-for k in range(0, n + 1):
+for k in range(0, n):
 
     def funzione(x):
-        y = k*x
+        y = x**2*np.sin(x/(0.1*k+1))
         return y
 
     f = fct.Function(funzione)
@@ -32,4 +32,5 @@ for k in range(0, n + 1):
         f.plot(a, b, f.get_der(a, b), color = cl.color(n, k, cd))
     print(k)
     plt.pause(0.05)
+#plt.title("$y=x^2\sin(x/(0.1k+1))$, $k=0,1,...,50$")
 plt.show()
