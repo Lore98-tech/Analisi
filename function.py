@@ -3,8 +3,8 @@ import numpy as np
 import math
 import time
 
-step = 0.001
-limite = 10
+step = 0.01
+limite = 500
 
 class Function:
     def __init__(self, callback):

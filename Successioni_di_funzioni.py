@@ -23,9 +23,7 @@ if der == 'si':
 for k in range(0, n + 1):
 
     def funzione(x):
-        
-        y = np.sin(k*x)
-
+        y = k*x
         return y
 
     f = fct.Function(funzione)
